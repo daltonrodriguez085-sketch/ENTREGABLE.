@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Le dice al navegador que este documento es HTML5 -->
+<html lang="es">
+<head>
+  <!-- Permite usar tildes y la ñ -->
+  <meta charset="UTF-8">
+
+  <!-- Clave para mobile first: el ancho de la página será el ancho del celular -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Perfil del empleado</title>
+
+  <!-- Tipografía: Instrument Sans (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Iconos: Font Awesome (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Nuestro CSS -->
+  <link rel="stylesheet" href="assets/CSS/asistencia.css">
+</head>
+<body>
+
+  <!-- Un solo <form> contiene toda la pantalla: foto, campos, huella y estado -->
+  <form class="perfil">
+
+    <!-- Foto del empleado (tú pones la imagen en img/avatar.png) -->
+    <img src="assets/images/avatar.png" alt="Foto del empleado" class="avatar">
+
+    <!-- Campo 1: el "for" del label debe ser igual al "id" del input -->
+    <label for="nombre">Nombre y Apellido.</label>
+    <input type="text" id="nombre" placeholder="Usuario.">
+
+    <!-- Campo 2 -->
+    <label for="dni">Documento DNI.</label>
+    <input type="text" id="dni" placeholder="Identificado.">
+
+    <!-- Campo 3 -->
+    <label for="puesto">Posición de trabajo.</label>
+    <input type="text" id="puesto" placeholder="Número de empleado.">
+
+    <!-- Icono de huella de Font Awesome: "fa-solid" = estilo, "fa-fingerprint" = icono -->
+    <i class="fa-solid fa-fingerprint huella"></i>
+
+    <!-- Mensaje de estado -->
+    <p class="estado">CORRECTO.</p>
+
+  </form>
+
+</body>
+</html>

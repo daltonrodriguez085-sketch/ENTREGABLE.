@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Documento HTML5 en español -->
+<html lang="es">
+<head>
+  <!-- Permite usar tildes y la ñ -->
+  <meta charset="UTF-8">
+
+  <!-- Clave para mobile first: el ancho de la página será el ancho del celular -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Iniciar Sesión</title>
+
+  <!-- Tipografía: Instrument Sans (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Iconos: Font Awesome (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Nuestro CSS -->
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <!-- Un solo <form> con todo: título y campos -->
+  <form class="login">
+
+    <h1>Iniciar Sesión:</h1>
+
+    <!-- Cada campo es un <label> que envuelve el texto y la "caja" blanca.
+         Al envolver el input dentro del label ya no necesitamos for ni id. -->
+
+    <!-- Nombre (ocupa media fila) -->
+    <label class="campo">Nombre:
+      <span class="caja">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" placeholder="Ingrese usuario.">
+      </span>
+    </label>
+
+    <!-- Apellido (la otra mitad de la fila) -->
+    <label class="campo">Apellido:
+      <span class="caja">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" placeholder="Ingrese aquí.">
+      </span>
+    </label>
+
+    <!-- Teléfono (ocupa toda la fila por la clase "ancho") -->
+    <label class="campo ancho">Teléfono:
+      <span class="caja">
+        <i class="fa-solid fa-mobile-screen"></i>
+        +51
+        <input type="tel" placeholder="Número...">
+      </span>
+    </label>
+
+    <!-- Correo electrónico -->
+    <label class="campo ancho">Correo electrónico:
+      <span class="caja">
+        <i class="fa-solid fa-envelope"></i>
+        <input type="email" placeholder="Ejemplo@gmail.com">
+      </span>
+    </label>
+
+    <!-- Contraseña: candado a la izquierda y ojo a la derecha -->
+    <label class="campo ancho">Contraseña:
+      <span class="caja">
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" placeholder="Ingrese su contraseña.">
+        <i class="fa-solid fa-eye"></i>
+      </span>
+    </label>
+
+  </form>
+
+</body>
+</html>
