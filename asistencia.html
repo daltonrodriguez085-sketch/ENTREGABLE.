@@ -8,10 +8,10 @@
   <!-- Clave para mobile first: el ancho de la página será el ancho del celular -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Perfil del empleado</title>
+  <title>Asistencia</title>
 
   <!-- Tipografía: Instrument Sans (Google Fonts) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" href="assets/icons/pepsi.ico">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
@@ -26,9 +26,11 @@
   <!-- Un solo <form> contiene toda la pantalla: foto, campos, huella y estado -->
   <form class="perfil">
 
-    <!-- Foto del empleado (tú pones la imagen en img/avatar.png) -->
-    <img src="assets/images/avatar.png" alt="Foto del empleado" class="avatar">
-
+ <!-- Foto del empleado: el facial.gif va ENCIMA del avatar.png -->
+<div class="escaner-frame">
+  <img src="assets/images/avatar.png" alt="Foto del empleado" class="avatar">
+  <img src="assets/images/escaner.gif" alt="reconocimiento facial" class="escaner">
+</div>
     <!-- Campo 1: el "for" del label debe ser igual al "id" del input -->
     <label for="nombre">Nombre y Apellido.</label>
     <input type="text" id="nombre" placeholder="Usuario.">
